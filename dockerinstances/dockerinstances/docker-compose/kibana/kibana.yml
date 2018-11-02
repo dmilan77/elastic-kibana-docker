@@ -1,0 +1,14 @@
+server.host: 172.20.128.3
+server.basePath: /search
+elasticsearch.url: https://172.20.128.2:9200
+elasticsearch.username: kibana
+elasticsearch.password: xxxxx
+elasticsearch.ssl.certificate: /etc/security/sslcert/all-truststore.pem
+elasticsearch.ssl.verificationMode: none
+logging.dest: /var/log/kibana/kibana.log
+#server.name: kibana
+#server.host: "0"
+#elasticsearch.url: http://ip-172-30-1-132.ec2.internal:9200
+#elasticsearch.username: elastic
+#elasticsearch.password: changeme
+#xpack.monitoring.ui.container.elasticsearch.enabled: true

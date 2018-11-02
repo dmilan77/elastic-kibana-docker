@@ -1,0 +1,37 @@
+cluster.name: "interset"
+node.name: "interset"
+network.host: 172.20.128.2
+#http.cors.enabled: true
+#http.cors.allow-origin: "*"
+#http.cors.allow-headers: "Authorization"
+#bootstrap.memory_lock: false
+bootstrap.system_call_filter: false
+thread_pool.bulk.queue_size: 1000
+action.search.shard_count.limit: 1000
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-credentials: true
+http.cors.allow-headers: X-Requested-With,X-Auth-Token,Content-Type, Content-Length, Authorization
+
+xpack.graph.enabled: false
+xpack.watcher.enabled: false
+xpack.security.enabled: true
+xpack.security.authc.accept_default_password: true
+xpack.security.authc.token.enabled: false
+xpack.security.authc.token.timeout: 20m
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.keystore.path: certs/localhost-keystore.jks
+xpack.security.transport.ssl.truststore.path: certs/all-truststore.jks
+xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.keystore.path: certs/localhost-keystore.jks
+xpack.security.http.ssl.truststore.path: certs/all-truststore.jks
+xpack.ssl.supported_protocols: TLSv1.2
+xpack.ssl.client_authentication: none
+xpack.ssl.verification_mode: none
+xpack.ssl.cipher_suites: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA
+xpack.ssl.keystore.password: interset
+xpack.security.http.ssl.keystore.password: interset
+xpack.security.http.ssl.truststore.password: interset
+xpack.security.transport.ssl.keystore.password: interset
+xpack.security.transport.ssl.truststore.password: interset
